@@ -19,8 +19,8 @@ import java.nio.file.Path;
         name = "Trevor",
         version = "@VERSION@",
         description = "@DESCRIPTION@",
-        url = "https://schemati.co/",
-        authors = { "Schematico" }
+        url = "https://schemati.co/, https://scala.gg/",
+        authors = { "Schematico", "GrowlyX" }
 )
 public class TrevorVelocity {
 

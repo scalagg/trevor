@@ -1,34 +1,37 @@
-# Eclipse #
-.classpath
-.project
-.settings
-
-# IntelliJ #
-*.iml
-*.ipr
-*.iws
+# IntelliJ
 .idea/
-# NetBeans #
+*.iml
+*.iws
 
-nbproject
-
-# Maven #
-build.xml
-target
-
-# Mac #
+# Mac
 .DS_Store
 
-# Vim #
-.*.sw[a-p]
+# Maven
+log/
+/target/
+dependency-reduced-pom.xml
 
-# Misc #
-build
-bin
-dist
-manifest.mf
+# Java
+#*.jar
 
-# Deploy #
-pom.xml.releaseBackup
-release.properties
-/.gradle/
+# JRebel
+rebel.xml
+
+# Keep libs
+#!lib/*.jar
+
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties

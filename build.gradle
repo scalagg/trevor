@@ -12,24 +12,24 @@ allprojects {
     apply plugin: 'java'
 
 	group 'co.schemati.trevor'
-	version '2.0.1-SNAPSHOT'
+	version '2.0.1-stb-v3'
     description 'Trevor is a platform-independent solution for cross-instance proxy communication'
 
 	sourceCompatibility = JavaVersion.VERSION_11
 	targetCompatibility = JavaVersion.VERSION_11
-	
+
 	ext {
         // Library versions
         configurateVersion = "3.7.1"
-        gsonVersion = "2.8.5"
+        gsonVersion = "2.8.9"
         guavaVersion = "28.2-jre"
-        jedisVersion = '3.5.2'
+        jedisVersion = '3.7.1'
 
         // Platform versions
 		bungeeVersion = '1.16-R0.5-SNAPSHOT'
-		velocityVersion = '1.1.4'
+		velocityVersion = '3.0.1'
 	}
-	
+
 	repositories {
 		mavenLocal()
 		mavenCentral()
