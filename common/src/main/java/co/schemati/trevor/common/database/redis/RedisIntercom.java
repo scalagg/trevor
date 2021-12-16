@@ -53,7 +53,7 @@ public class RedisIntercom extends JedisPubSub implements DatabaseIntercom {
     try {
       this.connection = database.getResource();
 
-      connection.subscribe(this, channels.toArray(String[]::new));
+      connection.subscribe(this, channels.toArray(new String[]{}));
     } catch (JedisException exception) {
       exception.printStackTrace();
     }
@@ -61,7 +61,7 @@ public class RedisIntercom extends JedisPubSub implements DatabaseIntercom {
 
   public void add(String... channel) {
     channels.addAll(Arrays.asList(channel));
-    super.subscribe(channels.toArray(String[]::new));
+    super.subscribe(channels.toArray(new String[]{}));
   }
 
   public void remove(String... channel) {

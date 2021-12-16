@@ -15,14 +15,12 @@ allprojects {
 	version '2.0.1-stb-v3'
     description 'Trevor is a platform-independent solution for cross-instance proxy communication'
 
-	sourceCompatibility = JavaVersion.VERSION_11
-	targetCompatibility = JavaVersion.VERSION_11
 
 	ext {
         // Library versions
         configurateVersion = "3.7.1"
         gsonVersion = "2.8.9"
-        guavaVersion = "28.2-jre"
+        guavaVersion = '31.0.1-jre'
         jedisVersion = '3.7.1'
 
         // Platform versions
