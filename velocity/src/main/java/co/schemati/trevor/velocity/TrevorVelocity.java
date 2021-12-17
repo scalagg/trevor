@@ -4,6 +4,7 @@ import co.schemati.trevor.common.TrevorCommon;
 import co.schemati.trevor.velocity.platform.VelocityListener;
 import co.schemati.trevor.velocity.platform.VelocityPlatform;
 import com.google.inject.Inject;
+import com.velocitypowered.api.event.PostOrder;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.event.proxy.ProxyShutdownEvent;
@@ -38,7 +39,9 @@ public class TrevorVelocity {
   @DataDirectory
   private Path dataFolder;
 
-  @Subscribe
+  @Subscribe(
+          order = PostOrder.FIRST
+  )
   public void onProxyStart(ProxyInitializeEvent event) {
     this.platform = new VelocityPlatform(this);
 
