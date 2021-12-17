@@ -5,6 +5,8 @@
 
 Trevor is an open-source platform independent solution that unionizes Redis and [Notchian-compliant](https://www.spigotmc.org/threads/what-is-notchian.156265/#post-1659509) proxies for cross-instance proxy communication.
 
+scalagg/trevor is a fork of the original **Trevor** repository with support for the latest Velocity 3.1.x buillds.
+
 ## Goals
 As a community, to unionize our thinking (and as well as our proxies!) setting goals is an important part of working together as a group.
 
